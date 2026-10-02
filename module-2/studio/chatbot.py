@@ -7,7 +7,7 @@ from langgraph.graph import StateGraph, START, END
 # from langchain_openai import ChatOpenAI
 from langchain_anthropic import ChatAnthropic
 # model = ChatOpenAI(model="gpt-4o", temperature=0) 
-model = ChatAnthropic(model="claude-haiku-4-5")
+model = ChatAnthropic(model="claude-haiku-4-5", temperature=0)
 
 # State class to store messages and summary
 class State(MessagesState):
